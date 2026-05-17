@@ -1,15 +1,29 @@
 <div align="center">
 
-# AWS for Developers
+<br />
 
-### Everything a developer needs to know about AWS, in one place.
+<h1>AWS for Developers</h1>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-[![Services](https://img.shields.io/badge/services-117-orange)](#table-of-contents)
-[![Categories](https://img.shields.io/badge/categories-16-green)](#table-of-contents)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
+<p>
+  <strong>Everything a developer needs to know about AWS — in one place.</strong>
+</p>
 
-A practical, no-fluff reference for the working developer. Each service has its own page with **what it is**, **why it exists**, **key concepts**, **a real-world example**, **CLI / SDK / IaC snippets**, **pricing**, and **the gotchas that will bite you**.
+<p>
+  <a href="#start-here"><img alt="Start here" src="https://img.shields.io/badge/START%20HERE-Foundations-2563eb?style=for-the-badge" /></a>
+  <a href="#table-of-contents"><img alt="Browse services" src="https://img.shields.io/badge/BROWSE-117%20Services-f97316?style=for-the-badge" /></a>
+  <a href="#common-use-case-recipes"><img alt="Recipes" src="https://img.shields.io/badge/RECIPES-30%2B-16a34a?style=for-the-badge" /></a>
+</p>
+
+<p>
+  <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square" />
+  <img alt="Categories" src="https://img.shields.io/badge/categories-16-blueviolet?style=flat-square" />
+  <img alt="Pages" src="https://img.shields.io/badge/pages-117-orange?style=flat-square" />
+  <img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-success?style=flat-square" />
+</p>
+
+<br />
+
+<p><em>Skim it like a map. Reach for the AWS docs when you go deeper.</em></p>
 
 </div>
 
@@ -19,39 +33,67 @@ A practical, no-fluff reference for the working developer. Each service has its 
 
 AWS docs are *exhaustive* — and exhausting. When you just need to ship something, you don't want a 60-page service guide; you want **the 3 paragraphs that matter**, **a working snippet**, and **the gotchas other developers wish they'd known**.
 
-That's this repo. Skim it like a map; reach for the AWS docs when you go deeper.
+That's this repo. Every service page follows the same skim-friendly format. No filler.
+
+> [!TIP]
+> If this is your first time on AWS, jump to **[Start here](#start-here)**.
+> If you know AWS and need a refresher on a service, find it in the **[Table of Contents](#table-of-contents)**.
+> If you have a problem in mind ("how do I run a containerized app?"), check **[Recipes](#common-use-case-recipes)**.
 
 ---
 
-## Stats at a glance
+## At a glance
 
-| | |
-|---|---|
-| **Services covered** | ~110 |
-| **Foundation concepts** | 6 |
-| **Categories** | 16 |
-| **Page format** | TL;DR → concepts → real example → CLI/SDK → pricing → gotchas → related |
-| **Average page length** | ~1 screen + a bit |
-| **License** | MIT |
+<table>
+  <tr>
+    <td><strong>Services covered</strong></td>
+    <td>~117</td>
+  </tr>
+  <tr>
+    <td><strong>Foundation concepts</strong></td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td><strong>Categories</strong></td>
+    <td>16</td>
+  </tr>
+  <tr>
+    <td><strong>Page format</strong></td>
+    <td>TL;DR → concepts → real example → CLI / SDK → pricing → gotchas → related</td>
+  </tr>
+  <tr>
+    <td><strong>Page length</strong></td>
+    <td>About one screen + a bit</td>
+  </tr>
+  <tr>
+    <td><strong>License</strong></td>
+    <td>MIT</td>
+  </tr>
+</table>
 
 ---
 
 ## Start here
 
-New to AWS? Read these six pages first — without them, the rest of AWS looks like a confusing zoo.
+New to AWS? These six pages give you the mental model. Read them in order; the rest of the repo assumes them.
 
-1. [Global Infrastructure](./00-foundations/01-global-infrastructure.md) — Regions, AZs, Edge Locations
-2. [Shared Responsibility Model](./00-foundations/02-shared-responsibility.md) — What AWS secures vs. what you secure
-3. [Well-Architected Framework](./00-foundations/03-well-architected.md) — The six pillars
-4. [Accounts, Billing, Free Tier](./00-foundations/04-accounts-billing.md) — Setup, MFA, tagging
-5. [Pricing Models](./00-foundations/05-pricing-models.md) — On-Demand, Spot, Reserved, Savings Plans
-6. [Regions & Service Availability](./00-foundations/06-regions.md) — Which services run where
+| # | Page | What it covers |
+|:-:|---|---|
+| 1 | [Global Infrastructure](./00-foundations/01-global-infrastructure.md) | Regions, AZs, Edge Locations |
+| 2 | [Shared Responsibility Model](./00-foundations/02-shared-responsibility.md) | What AWS secures vs. what you secure |
+| 3 | [Well-Architected Framework](./00-foundations/03-well-architected.md) | The six pillars every workload should follow |
+| 4 | [Accounts, Billing, Free Tier](./00-foundations/04-accounts-billing.md) | Day-1 setup, MFA, tagging strategy |
+| 5 | [Pricing Models](./00-foundations/05-pricing-models.md) | On-Demand, Spot, Reserved, Savings Plans |
+| 6 | [Regions & Service Availability](./00-foundations/06-regions.md) | Which services run where |
 
 ---
 
 ## Table of Contents
 
-### Compute — where your code runs
+Each category collapsed for scanning. Click to expand.
+
+<details open>
+<summary><strong>Compute</strong> — 10 services — where your code runs</summary>
 
 | Service | One-liner |
 |---|---|
@@ -66,7 +108,10 @@ New to AWS? Read these six pages first — without them, the rest of AWS looks l
 | [Elastic Beanstalk](./01-compute/elastic-beanstalk.md) | PaaS for web apps |
 | [App Runner](./01-compute/app-runner.md) | Fully managed container web apps |
 
-### Storage — where your data lives at rest
+</details>
+
+<details>
+<summary><strong>Storage</strong> — 7 services — where your data lives at rest</summary>
 
 | Service | One-liner |
 |---|---|
@@ -78,7 +123,10 @@ New to AWS? Read these six pages first — without them, the rest of AWS looks l
 | [Storage Gateway](./02-storage/storage-gateway.md) | Hybrid cloud storage |
 | [AWS Backup](./02-storage/aws-backup.md) | Cross-service backup orchestration |
 
-### Database
+</details>
+
+<details>
+<summary><strong>Database</strong> — 10 services</summary>
 
 | Service | One-liner |
 |---|---|
@@ -93,7 +141,10 @@ New to AWS? Read these six pages first — without them, the rest of AWS looks l
 | [Keyspaces](./03-database/keyspaces.md) | Managed Cassandra |
 | [MemoryDB](./03-database/memorydb.md) | Durable Redis-compatible DB |
 
-### Networking & Content Delivery
+</details>
+
+<details>
+<summary><strong>Networking &amp; Content Delivery</strong> — 11 services</summary>
 
 | Service | One-liner |
 |---|---|
@@ -109,7 +160,10 @@ New to AWS? Read these six pages first — without them, the rest of AWS looks l
 | [Global Accelerator](./04-networking/global-accelerator.md) | Anycast IPs over AWS backbone |
 | [Cloud Map](./04-networking/cloud-map.md) | Service discovery |
 
-### Security, Identity & Compliance
+</details>
+
+<details>
+<summary><strong>Security, Identity &amp; Compliance</strong> — 13 services</summary>
 
 | Service | One-liner |
 |---|---|
@@ -127,7 +181,10 @@ New to AWS? Read these six pages first — without them, the rest of AWS looks l
 | [ACM](./05-security-iam/acm.md) | Free TLS certificates |
 | [IAM Identity Center](./05-security-iam/identity-center.md) | SSO across accounts |
 
-### Messaging & Integration
+</details>
+
+<details>
+<summary><strong>Messaging &amp; Integration</strong> — 10 services</summary>
 
 | Service | One-liner |
 |---|---|
@@ -142,7 +199,10 @@ New to AWS? Read these six pages first — without them, the rest of AWS looks l
 | [SES](./06-messaging-integration/ses.md) | Transactional email |
 | [Pinpoint](./06-messaging-integration/pinpoint.md) | Multi-channel customer engagement |
 
-### DevOps & Infrastructure as Code
+</details>
+
+<details>
+<summary><strong>DevOps &amp; Infrastructure as Code</strong> — 10 services</summary>
 
 | Service | One-liner |
 |---|---|
@@ -157,7 +217,10 @@ New to AWS? Read these six pages first — without them, the rest of AWS looks l
 | [Systems Manager](./07-devops-iac/systems-manager.md) | Patch / Run Command / Session Manager |
 | [AppConfig](./07-devops-iac/appconfig.md) | Feature flags & dynamic config |
 
-### Monitoring & Observability
+</details>
+
+<details>
+<summary><strong>Monitoring &amp; Observability</strong> — 5 services</summary>
 
 | Service | One-liner |
 |---|---|
@@ -167,7 +230,10 @@ New to AWS? Read these six pages first — without them, the rest of AWS looks l
 | [Config](./08-monitoring-observability/config.md) | Track resource configuration over time |
 | [Managed Grafana / Prometheus](./08-monitoring-observability/grafana-prometheus.md) | OSS-compatible observability |
 
-### ML & AI
+</details>
+
+<details>
+<summary><strong>ML &amp; AI</strong> — 11 services</summary>
 
 | Service | One-liner |
 |---|---|
@@ -183,7 +249,10 @@ New to AWS? Read these six pages first — without them, the rest of AWS looks l
 | [Kendra](./09-ml-ai/kendra.md) | Enterprise search with ML re-ranking |
 | [Q Developer](./09-ml-ai/q-developer.md) | AWS's AI coding assistant |
 
-### Analytics
+</details>
+
+<details>
+<summary><strong>Analytics</strong> — 9 services</summary>
 
 | Service | One-liner |
 |---|---|
@@ -197,7 +266,10 @@ New to AWS? Read these six pages first — without them, the rest of AWS looks l
 | [MSK Connect](./10-analytics/msk-connect.md) | Managed Kafka Connect |
 | [MWAA](./10-analytics/mwaa.md) | Managed Apache Airflow |
 
-### Cost & Account Management
+</details>
+
+<details>
+<summary><strong>Cost &amp; Account Management</strong> — 6 services</summary>
 
 | Service | One-liner |
 |---|---|
@@ -208,7 +280,10 @@ New to AWS? Read these six pages first — without them, the rest of AWS looks l
 | [Trusted Advisor](./11-cost-management/trusted-advisor.md) | Best-practice checks |
 | [Compute Optimizer](./11-cost-management/compute-optimizer.md) | Right-sizing recommendations |
 
-### Migration & Hybrid
+</details>
+
+<details>
+<summary><strong>Migration &amp; Hybrid</strong> — 5 services</summary>
 
 | Service | One-liner |
 |---|---|
@@ -218,7 +293,10 @@ New to AWS? Read these six pages first — without them, the rest of AWS looks l
 | [MGN](./12-migration/mgn.md) | Application Migration Service |
 | [Outposts](./12-migration/outposts.md) | AWS hardware in your data center |
 
-### Developer Tools
+</details>
+
+<details>
+<summary><strong>Developer Tools</strong> — 7 services</summary>
 
 | Service | One-liner |
 |---|---|
@@ -230,13 +308,19 @@ New to AWS? Read these six pages first — without them, the rest of AWS looks l
 | [Location Service](./13-developer-tools/location-service.md) | Maps, geocoding, routing, geofences |
 | [LocalStack](./13-developer-tools/localstack.md) | Run AWS locally for dev / test |
 
-### IoT
+</details>
+
+<details>
+<summary><strong>IoT</strong> — 1 service</summary>
 
 | Service | One-liner |
 |---|---|
 | [IoT Core](./14-iot/iot-core.md) | Managed MQTT broker + device shadow + rules |
 
-### Media
+</details>
+
+<details>
+<summary><strong>Media</strong> — 3 services</summary>
 
 | Service | One-liner |
 |---|---|
@@ -244,17 +328,19 @@ New to AWS? Read these six pages first — without them, the rest of AWS looks l
 | [MediaLive](./15-media/medialive.md) | Live video encoding |
 | [Chime SDK](./15-media/chime-sdk.md) | Embed audio / video calls into your app |
 
+</details>
+
 ---
 
 ## Common use-case recipes
 
-Quick "which services do I combine for X" answers.
+Quick "**which services do I combine for X**" answers.
 
 | I want to… | Reach for |
 |---|---|
 | Host a static website | S3 + CloudFront + Route 53 + ACM |
 | Run a Node / Python API | Lambda + API Gateway, or ECS Fargate + ALB |
-| Run a containerized app | ECS Fargate (simple) or EKS (k8s) |
+| Run a containerized app | ECS Fargate (simple) or EKS (Kubernetes) |
 | Store user uploads | S3 with presigned URLs |
 | Add login to my app | Cognito User Pools (or roll your own JWT) |
 | Send transactional email | SES |
@@ -285,19 +371,22 @@ Quick "which services do I combine for X" answers.
 
 ## How to use this repo
 
+> [!NOTE]
+> This repo is a **map**, not the territory. Use it to orient yourself; the AWS docs are the source of truth.
+
 1. **Read the foundations.** Without the mental model, services look unrelated.
 2. **Pick a use case** ("I want to deploy a web API") — read the 2–4 service pages that solve it.
-3. **Copy the snippets** — they're written to be paste-and-run with minimal edits.
-4. **Skim the *Gotchas* section** — that's where the time-saving lives.
-5. **Open the AWS docs** when you need to go deeper. This repo is the map; AWS docs are the territory.
+3. **Copy the snippets.** They're written to be paste-and-run with minimal edits.
+4. **Skim the *Gotchas* section.** That's where the time-saving lives.
+5. **Open the AWS docs** when you need to go deeper.
 
 ---
 
-## Page conventions
+## Page template
 
-Every service page follows the same structure so you can skim consistently:
+Every service page follows the same skim-friendly structure:
 
-```
+```text
 TL;DR              one sentence
 What it is         plain-English explanation
 Why it exists      the problem it solves
@@ -313,16 +402,20 @@ Related            what to read next
 
 ## Contributing
 
-PRs welcome. Keep pages concise — if it doesn't fit on one screen-and-a-bit, it's too long. Link to the AWS docs for deep dives.
+Pull requests welcome. House style:
 
-Style notes:
-- One file per service.
-- Use the standard page template above.
-- Real-world examples should reference *concrete* scenarios — vague hypotheticals don't stick.
-- Prefer pasteable snippets over prose.
+- **One file per service.** Use the page template above.
+- **Concise.** If it doesn't fit on one screen + a bit, it's too long. Link to AWS docs for deep dives.
+- **Concrete examples.** Vague hypotheticals don't stick — reference a real-shaped scenario.
+- **Pasteable snippets.** Prefer code over prose where a snippet would do the job.
+- **Update the README index** when you add a service.
 
 ---
 
-## License
+<div align="center">
 
-[MIT](./LICENSE) — use freely.
+**Made for developers who'd rather ship than read 60 pages of docs.**
+
+[MIT License](./LICENSE) — use freely.
+
+</div>
