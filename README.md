@@ -147,6 +147,7 @@ Where your data lives at rest.
 - [CDK](./13-developer-tools/cdk-quickstart.md) — Quickstart, same concept as 07
 - [Amplify](./13-developer-tools/amplify.md) — Full-stack for mobile/web devs
 - [CloudShell](./13-developer-tools/cloudshell.md) — Browser-based terminal
+- [Location Service](./13-developer-tools/location-service.md) — Managed maps, geocoding, routing, geofences, trackers
 - [LocalStack](./13-developer-tools/localstack.md) — Run AWS locally for dev/test (3rd party but ubiquitous)
 
 ---
@@ -176,6 +177,7 @@ Quick "which services do I combine for X" answers:
 | Run scheduled jobs (cron) | EventBridge Scheduler → Lambda/ECS |
 | Run an LLM | Bedrock (managed) or SageMaker (custom) |
 | Search across documents | OpenSearch |
+| Show a map / geocode / route | Location Service (or Google Maps if UX-critical) |
 | Data warehouse | Redshift, or Athena over S3 (cheaper) |
 | Cache | ElastiCache (Redis) or DynamoDB DAX |
 | CI/CD | CodePipeline + CodeBuild, or GitHub Actions → AWS |
